@@ -14,6 +14,10 @@ namespace DesafioPOO.Models
             Imei = imei;
             Memoria = memoria;
         }
+
+        public void InformacoesDoDispositivo()
+        {
+            Console.WriteLine($"Marca: {this.GetType().Name}\nNumero: {this.Numero}\nModelo: {this.Modelo}\nIMEI: {this.Imei}\nMemoria: {this.Memoria}GB");
         }
 
         public void Ligar()
